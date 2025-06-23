@@ -141,7 +141,7 @@ option.VF_MIE_DENSITY_RAIN_MULT=雨天米氏散射倍数
 
 
 screen.Lighting=光照
-option.MINIMUM_AMBIENT_BRIGHTNESS=
+option.MINIMUM_AMBIENT_BRIGHTNESS=最低环境亮度
 
 screen.Emissive=自发光
 option.EMISSIVE_MODE=自发光模式
