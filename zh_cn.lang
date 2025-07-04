@@ -1,7 +1,8 @@
 #shaders/lang/zh_cn.lang
 #by:ACLittleice
-#从零开始创建的lang文档,过程中部分使用gpt4.1,若有错误还请指正
-#本汉化文档对应版本Revelation 20250622(github)
+#从零开始创建的lang文档,为Revelation光影添加了基础汉化
+#过程中部分使用gpt4.1,若有错误还请指正
+#本汉化文档对应版本Revelation 20250701(github)
 #感谢Surisen提供的光影汉化教程（进阶篇）
 #本汉化文档以 CC BY-NC-SA 4.0 协议进行许可
 
@@ -22,7 +23,7 @@ option.ATMOSPHERE_BOTTOM_ALTITUDE=大气底层高度
 option.VIEWER_BASE_ALTITUDE=观察者基准高度
 option.SUN_RADIUS_MULT=太阳半径倍数
 option.GALAXY=银河
-option.GALAXY_ROTATION=银河旋转
+option.GALAXY_SOLAR_POS=银河太阳位置
 option.STARS_COVERAGE=星星覆盖率
 option.AURORA=极光
 option.GALAXY_INTENSITY=银河强度
@@ -180,7 +181,8 @@ screen.Shadows=阴影
 option.shadowMapResolution=阴影贴图分辨率
 option.shadowDistance=阴影距离
 option.SHADOW_DISTORTION_STRENGTH=阴影扭曲强度
-option.PCF_SAMPLES COLORED_SHADOWS=PCF采样数 彩色阴影
+option.PCF_SAMPLES=PCF采样数
+option.COLORED_SHADOWS=彩色阴影
 option.SCREEN_SPACE_SHADOWS=屏幕空间阴影
 option.SHADOW_BACKFACE_CULLING=阴影背面剔除
 option.SCREEN_SPACE_SHADOWS_SAMPLES=屏幕空间阴影采样数
@@ -201,7 +203,8 @@ option.TEXTURE_FORMAT=纹理格式
 option.MOD_BLOCK_SUPPORT=模组方块支持
 option.NORMAL_MAPPING=法线贴图
 option.SPECULAR_MAPPING=高光贴图
-option.DEFAULT_DIELECTRIC_F0=默认介电F0
+option.DEFAULT_DIELECTRIC_F0=PBR电介质(F0)默认参数
+option.DEFAULT_DIELECTRIC_F0.comment=F0(0°入射角时的反射率)是 PBR 渲染中决定材质高光特性的核心参数. 适用于塑料、水、玻璃等非导电材质的高光效果模拟
 
 
 screen.Normal=法线
@@ -237,7 +240,7 @@ option.REAL_SKY_REFLECTIONS=真实天空反射
 option.SPECULAR_IMPORTANCE_SAMPLING_BIAS=高光重要性采样偏差
 
 screen.Refractions=折射
-option.RAYTRACED_REFRACTION=光线追踪折射
+option.RAYTRACED_REFRACTION=路径追踪折射
 option.REFRACTION_STRENGTH=折射强度
 
 screen.SubsurfaceScattering=次表面散射
@@ -260,8 +263,9 @@ option.CAS_STRENGTH=CAS强度
 screen.DoF=景深
 
 screen.TAA=TAA
+screen.TAA.comment=时间性抗锯齿
 option.TAA_ENABLED=启用TAA
-option.TAA_CLOSEST_FRAGMENT=最近片元TAA
+option.TAA_CLOSEST_FRAGMENT=TAA最近片元
 option.TAA_MAX_ACCUM_FRAMES=TAA最大累积帧数
 option.TAA_VARIANCE_CLIPPING=TAA方差裁剪
 option.TAA_AGGRESSION=TAA激进度
@@ -282,6 +286,10 @@ option.BLOOM_ENABLED=启用泛光
 
 screen.Exposure=曝光
 option.EXPOSURE_MODE=曝光模式
+value.EXPOSURE_MODE.MANUAL=手动
+value.EXPOSURE_MODE.AUTO_BASIC=自动(基础)
+value.EXPOSURE_MODE.AUTO_HISTOGRAM=自动(直方图)
+value.EXPOSURE_MODE.AUTO_HISTOGRAM.comment=根据直方图求平均亮度,以求达到一个更为准确的结果
 option.MANUAL_EV=手动曝光值
 option.AUTO_EXPOSURE_LOD=自动曝光LOD
 option.ISO=ISO感光度
