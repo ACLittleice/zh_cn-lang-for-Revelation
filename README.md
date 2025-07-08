@@ -1,5 +1,6 @@
 <h1 align = "center"> zh_cn lang for Revelation </h1>
 <p align = "center"> 从零开始创建的lang文档,为Revelation光影添加了基础汉化 </p﹥
+
                                           
 过程中部分使用gpt4.1,若有错误还请指正
 
