@@ -12,4 +12,5 @@
 * 感谢Surisen提供的光影汉化教程（进阶篇）
 * [教程](https://www.bilibili.com/read/readlist/rl606793)
 
+## 项目发布页
 [![bilibili](https://i0.hdslb.com/bfs/new_dyn/b2dbccf61c097f746c1b4cc51cd58414661920573.jpg@1c.webp)](https://www.bilibili.com/opus/1085805828804444161)
